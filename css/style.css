@@ -33,10 +33,27 @@ header.main-header {
 
 @media only screen and (max-width: 991px) {
     header.main-header {
-        height: auto;
-        padding: 0px 0;
+        height: auto !important;
+        padding: 10px 0;
     }
 }
+header.nav-fixed {
+    padding: 0px;
+    background-color: white;
+    height: 80px !important;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    
+}
+@media only screen and (max-width: 991px){
+    header.nav-fixed {
+        height: auto !important;
+        padding: 0px 0;
+        
+       
+    }
+    }
+
 
 /* nav-Brand */
 
@@ -67,23 +84,10 @@ header .logo .title__logo {
     color: #eee;
 }
 
-/* Nav-fixed */
-
-header.nav-fixed {
-    padding: 0px;
-    background-color: white;
-    /* height: 80px !important; */
-    border-bottom: none;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
-    height: auto !important;
-}
 .dark header.nav-fixed {
     background-color: #151421;
 }
 
-header.nav-fixed {
-    height: 180px;
-}
 
 /* navbar-toggler*/
 
@@ -197,7 +201,7 @@ button.navbar-toggler .icon-expand {
     opacity: 0.7;
 }
 
-dark .nav-fixed .navbar-collapse .nav-link:hover {
+.dark .nav-fixed .navbar-collapse .nav-link:hover {
     color: #eee !important;
     opacity: 0.7;
 }
@@ -698,9 +702,10 @@ header .header__dark {
 /* ---challenges--------- */
 #challenge {
     background-color: #f7f7f7;
+    padding: 4rem 0;
   }
   #challenge .challenge__container {
-    padding: 4rem 0;
+    
   }
   #challenge .challenge__title p:nth-child(1) {
     color: #7e7d7d;
@@ -904,5 +909,399 @@ header .header__dark {
 
 #gallery .brand img {
     width: 100%;
+}
+/* ---solutions-------- */
+
+#solutions {
+    padding: 3rem 0;
+}
+.dark #solutions {
+    background-color: #151421;
+}
+
+#solutions img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#solutions .progress__content {
+    position: relative;
+    margin-bottom: 30px;
+    color: #3f3a64;
+}
+#solutions .progress__content span {
+    color: #3f3a64;
+}
+.dark #solutions .progress__content {
+    color: #ffffff;
+}
+.dark #solutions .progress__content span {
+    color: #ffffff;
+}
+
+#solutions .progress__content .location1 {
+    left: 80%;
+    top: 10%;
+    position: absolute;
+}
+
+#solutions .progress__content .location2 {
+    left: 95%;
+    top: 10%;
+    position: absolute;
+}
+
+#solutions .progress__content .location3 {
+    left: 60%;
+    top: 10%;
+    position: absolute;
+}
+
+#solutions .progress__content .location4 {
+    left: 90%;
+    top: 10%;
+    position: absolute;
+}
+
+#solutions .gradient1 {
+    color: #61fded;
+    background-color: #0d8abc;
+    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
+}
+
+#solutions .gradient2 {
+    color: #eece90;
+    background-color: #d45529;
+    background-image: linear-gradient(-224deg, #d45529, #eece90);
+}
+
+#solutions .gradient3 {
+    color: #5c51ff;
+    background-color: #f646a9;
+    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
+}
+
+#solutions .gradient4 {
+    color: #e5529a;
+    background-color: #e77654;
+    background-image: linear-gradient(-224deg, #e77654, #e5529a);
+}
+
+#solutions .progress {
+    height: 5px;
+
+}
+
+#solutions .progress-bar {
+    height: 5px;
+}
+
+.progress .gradient1::before,
+.progress .gradient2::before,
+.progress .gradient3::before,
+.progress .gradient4::before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+
+.progress .gradient1::after,
+.progress .gradient2::after,
+.progress .gradient3::after,
+.progress .gradient4::after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: white;
+}
+
+.progress .gradient1::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: 20%;
+    top: 95%;
+    transform: translate(50%, -50%);
+
+}
+
+.progress .gradient1::after {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 95%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.progress .gradient2::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: 5%;
+    top: 95%;
+    transform: translate(50%, -50%);
+
+}
+
+.progress .gradient2::after {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 95%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.progress .gradient3::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: 40%;
+    top: 95%;
+    transform: translate(50%, -50%);
+
+}
+
+.progress .gradient3::after {
+    content: "";
+    position: absolute;
+    right: 40%;
+    top: 95%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.progress .gradient4::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    right: 15%;
+    top: 95%;
+    transform: translate(50%, -50%);
+
+}
+
+.progress .gradient4::after {
+    content: "";
+    position: absolute;
+    right: 15%;
+    top: 95%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* feedback */
+
+#feedback {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+}
+.dark #feedback {
+    background-color: #100f19;
+}
+
+#feedback .title__content h3 {
+    padding-bottom: 50px;
+}
+
+#feedback .feedback__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#feedback .image__feedback {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+#feedback .image__content {
+    margin-left: 20px;
+
+}
+
+#feedback .image__content h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3f3a64;
+}
+.dark #feedback .image__content h6 {
+    
+    color: #ffffff;
+}
+
+#feedback .image__content p {
+    margin-bottom: 0;
+}
+
+#feedback .item {
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 100%;
+
+}
+
+#feedback img {
+    width: 100%;
+    min-height: 100%;
+
+
+}
+
+.owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot span {
+    background: #213364a8;
+
+    transition: all 0.5s;
+}
+
+button:focus {
+    outline: 0px dotted;
+}
+
+.owl-two.owl-theme .owl-dots .owl-dot.active span,
+.owl-two.owl-theme .owl-dots .owl-dot:hover span {
+    background: #213364;
+    transform: scale(1.5);
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 60px;
+}
+
+/* news */
+
+#news {
+    padding: 3rem 0;
+}
+.dark #news{
+    background-color: #151421;
+}
+
+#news .title__content {
+    text-align: center;
+}
+
+#news .title__content h3 {
+    padding-bottom: 2rem;
+}
+
+#news .card {
+    border: 1px solid transparent;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
+}
+.dark #news .card {
+  
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
+    background-color: #151421;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+#news .card-img-top {
+    width: 100%;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+#news .card-body {
+    text-align: left;
+    padding: 1rem 1rem;
+
+}
+
+#news .card-text {
+    font-size: 1rem;
+}
+
+#news .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#news .card-footer {
+    text-align: left;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,.5);
+}
+.dark #news .card-footer {
+    background-color: #151421;
+  
+}
+#news .card-footer img{
+ border-radius: 50%;
+}
+#news .card-footer span {
+    text-transform: none;
+    font-weight: normal;
+}
+
+#news .card-body a {
+    text-decoration: none;
+    color: #213364;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.dark #news .card-body a {
+   
+    color: #ffffff;
+  
+}
+
+#news .card-body a:hover {
+    color: #009f4d;
+}
+
+#news .card-footer a {
+    text-decoration: none;
+    color: #213364;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.dark #news .card-footer a {
+
+    color: #ffffff;
+   
+}
+
+#news .card-footer a:hover {
+    color: #009f4d;
+}
+
+#news .card-footer .date-card {
+    text-transform: none;
+    font-weight: 600;
+    text-align: right;
+}
+
+#news .zoom img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+
+}
+
+#news .zoom:hover img {
+    transform: scale(1.1);
+
+}
+
+#news .zoom {
+    overflow: hidden;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+
 }
 
