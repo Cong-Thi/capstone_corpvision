@@ -1305,3 +1305,182 @@ button:focus {
 
 }
 
+/* ---Subscribe------ */
+
+#subscribe {
+    background-color: #151421;
+    background-image: url(../img/map.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 0;
+}
+
+#subscribe .title__content {
+    max-width: 700px;
+    text-align: center;
+
+}
+
+#subscribe .title__content h3 {
+    color: white;
+}
+
+#subscribe .form-group {
+    display: flex;
+    padding: 2rem 0;
+
+}
+
+.subscribe__icon {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 0.25rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+#subscribe input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 0px;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    height: 50px;
+
+}
+
+#subscribe button {
+    border-radius: 0.25rem;
+    border-left: 0px !important;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    width: 150px;
+}
+
+#subscribe .form-control:focus {
+    box-shadow: none;
+}
+
+#subscribe button.active {
+
+    box-shadow: none;
+}
+
+#subscribe button:focus {
+
+    box-shadow: none;
+}
+
+#subscribe .btn-success:hover {
+    color: #fff;
+    background-color: #008030;
+    border-color: #00732c;
+}
+
+/* ---footer-------- */
+
+footer {
+    background-color: #151421;
+}
+
+#footer__content {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+    border-bottom: 1px solid rgba(249, 249, 249, 0.1);
+    
+}
+
+footer .logo span {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.5s;
+    color: white;
+}
+
+footer .logo i {
+    font-size: 1.5rem;
+    color: #009f4d;
+}
+
+footer .logo .title__logo {
+    font-size: 1rem;
+    display: block;
+    font-weight: 400;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+
+}
+
+footer h4 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-bottom: 1.2rem;
+}
+
+footer p {
+    color: #97a1a9;
+}
+
+footer a {
+    color: #97a1a9;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+footer .copy-right {
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .copy-right a {
+    color: #009f4d;
+}
+
+footer .copy-right a:hover {
+    color: white;
+}
+
+footer .back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #009f4d;
+    text-align: center;
+    bottom: 10px;
+    right: 10px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+footer .back-to-top a {
+    padding: 0;
+    color: white;
+}
+
+.cd-top--is-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.cd-top--fade-out {
+    opacity: 1 !important;
+}
+
