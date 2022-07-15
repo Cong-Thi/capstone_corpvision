@@ -507,6 +507,14 @@ header .header__dark {
     width: 100%;
     height: 100%;
 }
+.dark .carousel .overlay {
+    background-color: #1d2a37d2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .carousel .container {
     width: 100%;
@@ -700,120 +708,156 @@ header .header__dark {
 }
 
 /* ---challenges--------- */
-#challenge {
-    background-color: #f7f7f7;
-    padding: 4rem 0;
-  }
-  #challenge .challenge__container {
+#challenges {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+}
+.dark #challenges {
+    padding: 3rem 0;
+    background-color: #100f19;
+}
+
+#challenges .title__content {
+    margin-top: 60px;
+}
+
+#challenges button {
+    padding: 12px 40px;
+    margin-top: 30px;
+}
+
+#challenges .card {
+    text-align: center;
+    padding: 30px 0;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    transition: all 0.5s;
+}
+.dark #challenges .card {
+   
+    background-color: #151421;
+    transition: all 0.5s;
     
-  }
-  #challenge .challenge__title p:nth-child(1) {
-    color: #7e7d7d;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-    margin-top: 4rem;
-  }
-  #challenge .challenge__title p {
-    /* color: gray; */
-    color: #838383;
-    font-size: 1rem;
-  }
-  #challenge .challenge__title h1 {
-    color: #3f3a64;
-    font-size: 2rem;
-    font-weight: bold;
-    padding-bottom: 1rem;
-  }
-  #challenge .challenge__content {
-    background-color: white;
-    padding: 2rem 3rem;
-    margin: 0.9rem 0;
-    text-align: center;
-    border-radius: 0.5rem;
-    transition: transform 0.4s;
-  }
-  
-  #challenge .challenge__content:hover {
-    transform: translateY(-15px);
+}
+
+#challenges .card:hover {
+    transform: translateY(-5px);
     box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
-  }
-  #challenge .challenge__content p {
-    padding-top: 1.5rem;
-    font-weight: 650;
-    font-size: 1.3rem;
+}
+
+#challenges .card-body {
+    padding: 0;
+}
+
+#challenges .card-body h4 {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+#challenges .card-body a {
+    text-decoration: none;
     color: #3f3a64;
-  }
-  #challenge .challenge__content p:hover {
-    color: rgb(10, 135, 10);
-  }
-  /* sevice */
-  #sevice .sevice__title h1 {
-    color: #3f3a64;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.dark #challenges .card-body a {
+    color: #ffffff;
+}
+
+#challenges .card-body a:hover {
+    color: #009f4d;
+}
+
+#challenges img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* ---Services----------- */
+#services {
+    padding: 6rem 0;
     text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    padding-bottom: 2rem;
-    padding-top: 5rem;
-  }
-  
-  #sevice .sevice__select img {
-    object-fit: contain;
-    width: 100%;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    overflow: hidden;
-  }
-  
-  .sevice__card-image {
-    position: relative;
-  }
-  .sevice__select .row {
+}
+.dark #services {
+    background-color: #151421;
+}
+
+#services .row {
     justify-content: center;
-  }
-  .sevice__select .btn__sevice {
-    bottom: 1.5rem;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
+}
+.dark #services .card{
+    background-color: #151421;
+}
+#services .card img {
+    width: 100%;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+#services h3 {
+    padding: 1rem 0;
     color: #3f3a64;
-    font-size: 1.1rem;
-    padding: 0.8rem 3rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    border: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.dark #services h3 {
+    color: #ffffff;
+
+}
+
+.card-body {
+    padding: 0 1.5rem;
+}
+
+#services .card {
+    border: none;
+}
+
+#services .card h4 {
     background-color: white;
-    box-shadow: 0 0 2px rgb(193, 190, 190);
-  }
-  .sevice__select .btn__sevice:hover {
-    color: rgb(58, 123, 58);
-  }
-  .sevice__select p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    border-radius: 10px;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-block: 0 !important;
+
+}
+.dark #services .card h4 {
+    background-color: #151421;
+    border: 1px solid rgba(255, 255, 255, .2);
+
+}
+
+@media only screen and (max-width: 991px) {
+    #services .card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+#services .card p {
     color: #7e7d7d;
-    font-weight: 500;
-    text-align: center;
-  }
-  .sevice__select .btn__learMore {
-    text-align: center;
-    margin: 1.5rem auto;
-    display: block;
-    padding: 0.5rem 2.5rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    border: white;
+    transition: all 0.5s;
+
+}
+
+#services .card a {
+    text-decoration: none;
     color: #3f3a64;
-    font-weight: 700;
-  }
-  .sevice__select .btn__learMore:focus {
-    outline: #79b4adb5 solid 3px;
-  }
-  .sevice__select .btn__learMore:hover {
-    color: rgb(58, 123, 58);
-  }
-  .sevice__select .sevice__card {
-    padding-bottom: 3rem;
-  }
+    font-weight: 600;
+}
+.dark #services .card a {
+    color: #ffffff;
+}
+
+#services .card:hover a {
+    color: #009f4d;
+}
   /* gallery */
 
 #gallery {
